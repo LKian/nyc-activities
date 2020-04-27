@@ -1,19 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "../App.css";
 
-const Modal = ({ name, description }) => {
-  const [isClosed, setisClosed] = useState(false);
-
-  const closeModal = () => {
-    console.log("Close modal fx from within Modal.js");
-    //   setModal(false);
+const Modal = ({ name, description, setIsOpen }) => {
+  const handleClick = () => {
+    setIsOpen(false);
   };
 
   return (
     <div className="modal">
-      <button onClick={closeModal}>XXX</button>
+      <button onClick={handleClick}>XXX</button>
       <h3>{name}</h3>
-
       <p>{description}</p>
     </div>
   );
