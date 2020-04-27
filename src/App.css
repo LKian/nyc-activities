@@ -45,7 +45,6 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  border: 5px dashed red;
 }
 
 @media (min-width: 551px) {
@@ -89,6 +88,7 @@ section {
 .activity-container {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .tag-container {
@@ -100,4 +100,20 @@ section {
   width: 100px;
   background-color: #399;
   text-transform: uppercase;
+}
+
+.modal {
+  border: 2px dashed red;
+  color: #090;
+  position: fixed;
+  z-index: 500;
+  background-color: yellow;
+  width: 70%;
+  min-height: 300px;
+  box-shadow: 1px 1px 1px black;
+  padding: 20px;
+  left: 15%;
+  top: 30%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
 }

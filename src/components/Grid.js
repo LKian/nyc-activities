@@ -12,7 +12,7 @@ import {
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Grid = () => {
+const Grid = ({ data }) => {
   return (
     <div className="app-container">
       <section>
@@ -38,7 +38,9 @@ const Grid = () => {
       <section>
         <div className="grid">
           {activities.map((activity) => (
-            <Card data={activity} />
+            <Card className="setInGrid" data={activity} name={activity.name}>
+              <h4 className={activity.name}>here</h4>
+            </Card>
           ))}
         </div>
       </section>
