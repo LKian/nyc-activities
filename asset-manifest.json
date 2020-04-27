@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nyc-activities/static/css/main.fc2d8bb9.chunk.css",
+    "main.js": "/nyc-activities/static/js/main.82d463d1.chunk.js",
+    "main.js.map": "/nyc-activities/static/js/main.82d463d1.chunk.js.map",
+    "runtime-main.js": "/nyc-activities/static/js/runtime-main.abed6fc2.js",
+    "runtime-main.js.map": "/nyc-activities/static/js/runtime-main.abed6fc2.js.map",
+    "static/js/2.6f846628.chunk.js": "/nyc-activities/static/js/2.6f846628.chunk.js",
+    "static/js/2.6f846628.chunk.js.map": "/nyc-activities/static/js/2.6f846628.chunk.js.map",
+    "index.html": "/nyc-activities/index.html",
+    "precache-manifest.7c8dff9f6eede9b5dd9f538634e76d1d.js": "/nyc-activities/precache-manifest.7c8dff9f6eede9b5dd9f538634e76d1d.js",
+    "service-worker.js": "/nyc-activities/service-worker.js",
+    "static/css/main.fc2d8bb9.chunk.css.map": "/nyc-activities/static/css/main.fc2d8bb9.chunk.css.map",
+    "static/js/2.6f846628.chunk.js.LICENSE.txt": "/nyc-activities/static/js/2.6f846628.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abed6fc2.js",
+    "static/js/2.6f846628.chunk.js",
+    "static/css/main.fc2d8bb9.chunk.css",
+    "static/js/main.82d463d1.chunk.js"
+  ]
+}
