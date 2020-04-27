@@ -6,14 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ data }) => {
-  const [isOpen, setisOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const openModal = () => {
+  const handleClick = () => {
     console.log("OPEN modal fx from Card.js");
-    setisOpen(true);
+    setIsOpen(true);
   };
 
-  console.log(isOpen);
   return (
     <div className="card" data-activity={data.category}>
       <div className="card-container">
@@ -26,9 +25,17 @@ const Card = ({ data }) => {
           <a className="directions" href={data.directions}>
             <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
           </a>
-
-          <button onClick={openModal}>Open Modal</button>
-          {isOpen ? <Modal /> : ""}
+          <button onClick={handleClick}>Open Modal</button>
+          {isOpen ? (
+            <Modal
+              name={data.name}
+              description={data.description}
+              setIsOpen={setIsOpen}
+            />
+          ) : (
+            ""
+          )}
+          {console.log("isOpen ", isOpen)}
         </div>
       </div>
     </div>
