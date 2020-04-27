@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/nyc-activities/static/css/main.1c726f3f.chunk.css",
-    "main.js": "/nyc-activities/static/js/main.43ef0d7a.chunk.js",
-    "main.js.map": "/nyc-activities/static/js/main.43ef0d7a.chunk.js.map",
+    "main.js": "/nyc-activities/static/js/main.acf71b32.chunk.js",
+    "main.js.map": "/nyc-activities/static/js/main.acf71b32.chunk.js.map",
     "runtime-main.js": "/nyc-activities/static/js/runtime-main.abed6fc2.js",
     "runtime-main.js.map": "/nyc-activities/static/js/runtime-main.abed6fc2.js.map",
-    "static/js/2.6f186cac.chunk.js": "/nyc-activities/static/js/2.6f186cac.chunk.js",
-    "static/js/2.6f186cac.chunk.js.map": "/nyc-activities/static/js/2.6f186cac.chunk.js.map",
+    "static/js/2.0d15eb8c.chunk.js": "/nyc-activities/static/js/2.0d15eb8c.chunk.js",
+    "static/js/2.0d15eb8c.chunk.js.map": "/nyc-activities/static/js/2.0d15eb8c.chunk.js.map",
     "index.html": "/nyc-activities/index.html",
-    "precache-manifest.840c1b1cb3945fb75c79943469a877c1.js": "/nyc-activities/precache-manifest.840c1b1cb3945fb75c79943469a877c1.js",
+    "precache-manifest.1f2624dd73999dac369484f7e640f428.js": "/nyc-activities/precache-manifest.1f2624dd73999dac369484f7e640f428.js",
     "service-worker.js": "/nyc-activities/service-worker.js",
     "static/css/main.1c726f3f.chunk.css.map": "/nyc-activities/static/css/main.1c726f3f.chunk.css.map",
-    "static/js/2.6f186cac.chunk.js.LICENSE.txt": "/nyc-activities/static/js/2.6f186cac.chunk.js.LICENSE.txt"
+    "static/js/2.0d15eb8c.chunk.js.LICENSE.txt": "/nyc-activities/static/js/2.0d15eb8c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.abed6fc2.js",
-    "static/js/2.6f186cac.chunk.js",
+    "static/js/2.0d15eb8c.chunk.js",
     "static/css/main.1c726f3f.chunk.css",
-    "static/js/main.43ef0d7a.chunk.js"
+    "static/js/main.acf71b32.chunk.js"
   ]
 }
