@@ -10,6 +10,7 @@ const Card = ({ data }) => {
 
   const openModal = () => {
     console.log("OPEN modal fx from Card.js");
+    setisOpen(true);
   };
 
   console.log(isOpen);
@@ -27,6 +28,7 @@ const Card = ({ data }) => {
           </a>
 
           <button onClick={openModal}>Open Modal</button>
+          {isOpen ? <Modal /> : ""}
         </div>
       </div>
     </div>
