@@ -30,7 +30,7 @@ const activities = [
   },
   {
     name: "Bryant Park",
-    category: "explore relax",
+    category: "explore",
     neighborhood: "midtown",
     description:
       "Green space behind the NY Public Library's main branch, with 4 acres, a cafe and other food kiosks.",
