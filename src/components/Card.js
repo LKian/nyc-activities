@@ -32,9 +32,7 @@ const Card = ({ data }) => {
               description={data.description}
               setIsOpen={setIsOpen}
             />
-          ) : (
-            ""
-          )}
+          ) : null}
           {console.log("isOpen ", isOpen)}
         </div>
       </div>
