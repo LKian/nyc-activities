@@ -8,6 +8,7 @@
 
 .App {
   text-align: center;
+  background-color: #e6c14e;
 }
 
 section {
@@ -41,7 +42,6 @@ section {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -95,25 +95,61 @@ section {
   display: flex;
 }
 
-.tag-container .tag {
+.tag {
   padding: 2.5px;
   width: 100px;
-  background-color: #399;
   text-transform: uppercase;
 }
 
+.tag-explore {
+  background-color: #399;
+}
+
+.tag-shop {
+  background-color: #511845;
+}
+
+.tag-drink {
+  background-color: #900c3f;
+}
+
+.tag-eat {
+  background-color: #342ead;
+}
+
+.tag-see {
+  background-color: #de7119;
+}
+
+.tag-coffee {
+  background-color: #5a3111;
+}
+
 .modal {
-  border: 2px dashed red;
+  display: flex;
+  flex-direction: column;
   color: #090;
   position: fixed;
   z-index: 500;
-  background-color: yellow;
+  background-color: #fff;
   width: 70%;
   min-height: 300px;
-  box-shadow: 1px 1px 1px black;
-  padding: 20px;
+  padding: 10px;
   left: 15%;
   top: 30%;
-  box-sizing: border-box;
+  box-shadow: 2px 2px 8px 1px #222;
   transition: all 0.2s ease-out;
+}
+
+.modal button {
+  text-align: right;
+  background-color: transparent;
+  border: none;
+}
+
+.modal button:hover {
+  cursor: pointer;
+  /* filter: drop-shadow(1px 1px 1px #eee); */
+  filter: invert(25%);
+  transition: all 0.2s;
 }

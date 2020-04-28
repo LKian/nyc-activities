@@ -3,6 +3,9 @@ const activities = [
     name: "Central Park",
     category: "explore",
     neighborhood: "midtown",
+    description:
+      "Sprawling park with pedestrian paths & ballfields, plus a zoo, carousel, boat rentals & a reservoir.",
+    directions: "https://goo.gl/maps/3HW66vd6c5CCQ66m6",
   },
   {
     name: "Chelsea Market",
@@ -15,7 +18,7 @@ const activities = [
   {
     name: "Brooklyn Bridge",
     category: "explore",
-    neighborhood: "lower-ease-side",
+    neighborhood: "lower east side",
     description:
       "5989 ft long suspension bridge 276 ft above East River.  The two towers are constructed of limestone, granite, and concrete, and each tower features two Gothic arches which resemble cathedral windows",
     directions: "https://goo.gl/maps/rAsXkHAEYxUJh2G86",
@@ -55,7 +58,7 @@ const activities = [
   {
     name: "Oculus",
     category: "see",
-    neighborhood: "civic-center",
+    neighborhood: "civic center",
     description:
       "Designed by Santiago Calatrava, this airy transport hub serves the new World Trade Center.",
     directions: "https://goo.gl/maps/hruFUWr12veFCEGY7",
@@ -71,7 +74,7 @@ const activities = [
   {
     name: "Little Italy",
     category: "eat",
-    neighborhood: "little-italy",
+    neighborhood: "little italy",
     description:
       "Little Italy welcomes a heavily tourist crowd to its high concentration of souvenir shops and traditional Italian eateries and bakeries. Tenement buildings, once home to the immigrants who settled the area in the late 1800s, line the narrow streets. Mulberry Street, the main thoroughfare, turns into a pedestrian mall on summer weekends. The area celebrates its heritage each September at the busy San Gennaro festival.",
     directions: "https://goo.gl/maps/4TQm4w5nMbFvy8wG8",
@@ -126,7 +129,7 @@ const activities = [
   },
   {
     name: "Strand Bookstore",
-    category: "relax",
+    category: "shop",
     neighborhood: "greenwich",
     description:
       "Landmark shop specializing in new, used & rare books from philosophy to finance, plus bookish gifts.",
@@ -159,7 +162,7 @@ const activities = [
   {
     name: "Levain Bakery",
     category: "eat",
-    neighborhood: "upper-west-side",
+    neighborhood: "upper west side",
     description:
       "Fresh breads, cookies & other baked treats at this tiny shop that donates unsold goods to charity",
     directions: "https://goo.gl/maps/UrHa8ZdPZjfeFzfZ9",
@@ -167,7 +170,7 @@ const activities = [
   {
     name: "Attaboy",
     category: "drink",
-    neighborhood: "lower-east-side",
+    neighborhood: "lower east side",
     description:
       "Innovative, creative cocktails & classic concoctions mixed up in an industrial-style space.",
     directions: "https://g.page/attaboy134?share",
@@ -191,7 +194,7 @@ const activities = [
   {
     name: "Union Square",
     category: "explore",
-    neighborhood: "union-square",
+    neighborhood: "union square",
     description:
       "The lively Union Square neighborhood is anchored by its namesake pedestrian plaza and bustling park, which attracts a mix of professionals, street artists, students and protesters. The surrounding streets are lined with high-rise apartments and big-name chain stores, as well as casual eateries and cafes. The stalls of the long-running Union Square Greenmarket draw crowds for local produce and artisanal food.",
     directions: "https://goo.gl/maps/Niv812QjdwwQ2sMk8",
@@ -199,7 +202,7 @@ const activities = [
   {
     name: "The Dead Rabbit Grocery and Grog",
     category: "drink",
-    neighborhood: "wall-street",
+    neighborhood: "wall street",
     description:
       "This 2-story spot combines a lunch taproom with a parlor serving small plates & vintage cocktails.",
     directions: "https://goo.gl/maps/QMnwQge4nat5btqSA",
@@ -238,7 +241,7 @@ const activities = [
   },
   {
     name: "Chinatown",
-    category: " eat",
+    category: "eat",
     neighborhood: "chinatown",
     description:
       "Vibrant Chinatown is a densely populated neighborhood that draws foodies and tourists to its many Chinese and Southeast Asian restaurants for dumplings, pork buns and hand-pulled noodles. The busy sidewalks are packed with souvenir stores, bubble tea shops, and markets selling everything from fresh and dried fish to herbs and spices. Locals hang out in leafy Columbus Park for Tai Chi, chess and mahjong.",
