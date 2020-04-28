@@ -1,11 +1,7 @@
 import React from "react";
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTimes,
-  faMapMarkerAlt,
-  faMap,
-} from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 const Modal = ({ name, neighborhood, description, directions, setIsOpen }) => {
   const handleClick = () => {
     setIsOpen(false);
