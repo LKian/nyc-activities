@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21b0deb5b937d992c0066a50172d14ed",
+    "revision": "f6ff810f9bd856a263f50db14bc2390c",
     "url": "/nyc-activities/index.html"
   },
   {
-    "revision": "70c17fa820d0649d7d7e",
-    "url": "/nyc-activities/static/css/main.d0c6a607.chunk.css"
+    "revision": "9e2e6edefbdf112cbcc4",
+    "url": "/nyc-activities/static/css/main.e737c0b8.chunk.css"
   },
   {
     "revision": "6277e628f500e1714967",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nyc-activities/static/js/2.68c56437.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70c17fa820d0649d7d7e",
+    "revision": "9e2e6edefbdf112cbcc4",
     "url": "/nyc-activities/static/js/main.235b5faf.chunk.js"
   },
   {
