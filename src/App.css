@@ -8,6 +8,7 @@
 
 .App {
   text-align: center;
+  background-color: #e6c14e;
 }
 
 section {
@@ -41,7 +42,6 @@ section {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -61,11 +61,13 @@ section {
 
 .card {
   background-color: #222;
-  /* padding: 10px 5px; */
   width: 50%;
   border: 2px solid #eee;
   color: #eee;
   transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
 }
 
 @media (min-width: 551px) {
@@ -80,40 +82,115 @@ section {
   }
 }
 
-.card-container {
+.activity-container {
+  padding: 10px 0 20px;
+  min-height: 189px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.activity-container {
-  display: flex;
-  flex-direction: column;
+.activity-name {
   padding: 10px;
 }
 
-.tag-container {
+.card-buttons {
   display: flex;
+  justify-content: space-around;
 }
 
-.tag-container .tag {
-  padding: 2.5px;
-  width: 100px;
-  background-color: #399;
+.tag {
+  display: flex;
+  padding: 2.5px 5px;
+  max-width: 100px;
+  border-bottom-right-radius: 5px;
   text-transform: uppercase;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.tag-explore {
+  background-color: #399;
+}
+
+.tag-shop {
+  background-color: #511845;
+}
+
+.tag-drink {
+  background-color: #900c3f;
+}
+
+.tag-eat {
+  background-color: #342ead;
+}
+
+.tag-see {
+  background-color: #de7119;
+}
+
+.tag-coffee {
+  background-color: #5a3111;
 }
 
 .modal {
-  border: 2px dashed red;
-  color: #090;
+  display: flex;
+  flex-direction: column;
+  color: #099;
   position: fixed;
   z-index: 500;
-  background-color: yellow;
+  background-color: #fff;
   width: 70%;
   min-height: 300px;
-  box-shadow: 1px 1px 1px black;
-  padding: 20px;
+  border-radius: 5px;
+  padding: 10px;
   left: 15%;
   top: 30%;
-  box-sizing: border-box;
+  box-shadow: 2px 2px 8px 1px #222;
   transition: all 0.2s ease-out;
+}
+
+.modal hr {
+  margin: 20px auto;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.modal-content p {
+  padding: 10px 0;
+}
+
+.modal-details {
+  display: flex;
+}
+
+.modal-details img {
+  max-width: 250px;
+}
+
+.modal-details p {
+  padding-left: 30px;
+}
+
+.modal button {
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.modal button:hover {
+  cursor: pointer;
+  filter: invert(25%);
+  transition: all 0.2s;
 }
