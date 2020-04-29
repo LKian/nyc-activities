@@ -23,30 +23,31 @@ const Card = ({ data }) => {
 
   return (
     <div className="card" data-activity={data.category}>
-      <div className="card-container">
-        <div className="tag-container">
-          <span className={`tag tag-${data.category}`}>{data.category}</span>
-        </div>
-        <div className="activity-container">
-          <h2 className="activity-name">{data.name}</h2>
-          <div className="neighborhood">{data.neighborhood}</div>
-          <a className="directions" href={data.directions}>
+      <span className={`tag tag-${data.category}`}>{data.category}</span>
+      <div className="activity-container">
+        <h2 className="activity-name">{data.name}</h2>
+        <div className="card-buttons">
+          <a
+            className="directions"
+            href={data.directions}
+            aria-label={`directions to ${data.name}`}
+          >
             <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
           </a>
-          <a onClick={handleClick}>
-            <FontAwesomeIcon icon={faPlus} size="2x" />
-          </a>
-          {isOpen ? (
-            <Modal
-              name={data.name}
-              neighborhood={data.neighborhood}
-              description={data.description}
-              directions={data.directions}
-              setIsOpen={setIsOpen}
-            />
-          ) : null}
-          {console.log("isOpen ", isOpen)}
+          <FontAwesomeIcon onClick={handleClick} icon={faPlus} size="2x" />
         </div>
+
+        {isOpen ? (
+          <Modal
+            name={data.name}
+            neighborhood={data.neighborhood}
+            description={data.description}
+            image={data.image}
+            directions={data.directions}
+            setIsOpen={setIsOpen}
+          />
+        ) : null}
+        {console.log("isOpen ", isOpen)}
       </div>
     </div>
   );
