@@ -99,6 +99,18 @@ section {
   justify-content: space-around;
 }
 
+.card-buttons svg,
+.modal-content svg {
+  color: #900c3f;
+  filter: drop-shadow(1px 1px 0px #8f1dee);
+}
+
+.card-buttons svg:hover {
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 1px #ccc);
+  transition: 0.2s;
+}
+
 .tag {
   display: flex;
   padding: 2.5px 5px;
