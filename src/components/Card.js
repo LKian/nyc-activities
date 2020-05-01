@@ -47,7 +47,7 @@ const Card = ({ data }) => {
             setIsOpen={setIsOpen}
           />
         ) : null}
-        {console.log("isOpen ", isOpen)}
+        {/* {console.log("isOpen ", isOpen)} */}
       </div>
     </div>
   );
