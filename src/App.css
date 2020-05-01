@@ -9,6 +9,7 @@
 .App {
   text-align: center;
   background-color: #e6c14e;
+  min-height: 100vh;
 }
 
 section {
