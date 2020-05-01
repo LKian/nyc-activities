@@ -1,4 +1,4 @@
-const activities = [
+const data = [
   {
     name: "Central Park",
     category: "explore",
@@ -417,4 +417,4 @@ const activities = [
   },
 ];
 
-export default activities;
+export default data;
