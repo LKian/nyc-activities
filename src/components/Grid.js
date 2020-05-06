@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import activities from "../data";
+import data from "../data";
 import Card from "./Card";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,16 +11,17 @@ import {
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Grid = ({ data }) => {
-  const [isMatch, setMatch] = useState();
+const Grid = () => {
+  const [activities, setActivities] = useState(data);
+  const [activeCategory, setActiveCategory] = useState("");
 
   const handleButtonClick = (e) => {
-    let clickedButton = e.currentTarget.dataset.activity;
-
-    setMatch(clickedButton);
-    {
-      console.log("clicked on: ", clickedButton, " & is match: ", isMatch);
-    }
+    const categoryName = e.currentTarget.dataset.activity;
+    setActiveCategory(categoryName);
+    const filter = data.filter(
+      (activity) => activity.category === categoryName
+    );
+    setActivities(filter);
   };
 
   return (
@@ -67,15 +68,15 @@ const Grid = ({ data }) => {
       </section>
       <section>
         <div className="grid">
-          {activities.map((activity) =>
-            activity.category == isMatch ? (
+          {activities &&
+            activities.map((activity) => (
               <Card
                 className="setInGrid"
                 data={activity}
                 name={activity.name}
+                key={activity.name}
               />
-            ) : null
-          )}
+            ))}
         </div>
       </section>
     </div>
