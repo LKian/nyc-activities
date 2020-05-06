@@ -29,6 +29,9 @@ const Grid = () => {
       <section>
         <div className="container-filters">
           <button
+            style={{
+              backgroundColor: activeCategory === "explore" ? "blue" : "white",
+            }}
             className="button button--filter"
             data-activity="explore"
             onClick={handleButtonClick}
@@ -36,33 +39,62 @@ const Grid = () => {
             <FontAwesomeIcon icon={faFireAlt} size="2x" />
           </button>
           <button
+            style={{
+              backgroundColor: activeCategory === "eat" ? "blue" : "white",
+            }}
             className="button button--filter button--eat"
             data-activity="eat"
             onClick={handleButtonClick}
           >
-            <FontAwesomeIcon icon={faUtensils} size="2x" />
+            <FontAwesomeIcon
+              color={activeCategory === "eat" ? "#fff" : "#000"}
+              icon={faUtensils}
+              size="2x"
+            />
           </button>
 
           <button
+            style={{
+              backgroundColor: activeCategory === "drink" ? "blue" : "white",
+            }}
             className="button button--filter button--drink"
             data-activity="drink"
             onClick={handleButtonClick}
           >
-            <FontAwesomeIcon icon={faCocktail} size="2x" />
+            <FontAwesomeIcon
+              color={activeCategory === "drink" ? "#fff" : "#000"}
+              icon={faCocktail}
+              size="2x"
+            />
           </button>
           <button
+            style={{
+              backgroundColor: activeCategory === "see" ? "blue" : "white",
+              color: "red",
+            }}
             className="button button--filter button--see"
             data-activity="see"
             onClick={handleButtonClick}
           >
-            <FontAwesomeIcon icon={faBinoculars} size="2x" />
+            <FontAwesomeIcon
+              color={activeCategory === "see" ? "#fff" : "#000"}
+              icon={faBinoculars}
+              size="2x"
+            />
           </button>
           <button
+            style={{
+              backgroundColor: activeCategory === "shop" ? "blue" : "white",
+            }}
             className="button button--filter button--shop"
             data-activity="shop"
             onClick={handleButtonClick}
           >
-            <FontAwesomeIcon icon={faShoppingCart} size="2x" />
+            <FontAwesomeIcon
+              color={activeCategory === "shop" ? "#fff" : "#000"}
+              icon={faShoppingCart}
+              size="2x"
+            />
           </button>
         </div>
       </section>
