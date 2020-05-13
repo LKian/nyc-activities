@@ -14,13 +14,13 @@ function App() {
 
   return (
     <div className={`App ${darkMode ? "dark-mode" : "light-mode"}`}>
-      <FontAwesomeIcon
-        onClick={handleDarkMode}
-        icon={darkMode ? faLightbulb : farLightbulb}
-        size="2x"
-      />
-
-      <h1>{darkMode ? "dark" : "light"}</h1>
+      <div className="section color-mode-container">
+        <FontAwesomeIcon
+          onClick={handleDarkMode}
+          icon={darkMode ? faLightbulb : farLightbulb}
+          size="2x"
+        />
+      </div>
       <Grid />
     </div>
   );
