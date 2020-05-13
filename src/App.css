@@ -207,3 +207,12 @@ section {
   filter: invert(25%);
   transition: all 0.2s;
 }
+
+.light-mode {
+  background-color: #e6c14e;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #eee;
+}
