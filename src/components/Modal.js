@@ -27,7 +27,7 @@ const Modal = ({
         </a>
         <hr />
         <div className="modal-details">
-          <img src={image} alt={name}></img>
+          <img src={`${process.env.PUBLIC_URL}/${image}`} alt={name}></img>
           <p>{description}</p>
         </div>
       </div>
