@@ -154,14 +154,21 @@ section {
   position: fixed;
   z-index: 500;
   background-color: #fff;
-  width: 70%;
   min-height: 300px;
   border-radius: 5px;
   padding: 10px;
-  left: 15%;
-  top: 30%;
+  width: auto;
+  top: 20%;
   box-shadow: 2px 2px 8px 1px #222;
   transition: all 0.2s ease-out;
+}
+
+@media (min-width: 551px) {
+  .modal {
+    width: 70%;
+    left: 15%;
+    right: 15%;
+  }
 }
 
 .modal hr {
@@ -182,18 +189,31 @@ section {
 
 .modal-content p {
   padding: 10px 0;
+  text-align: left;
+  line-height: 1.25rem;
 }
 
 .modal-details {
   display: flex;
+  flex-direction: column;
 }
 
-.modal-details img {
-  max-width: 250px;
+@media (min-width: 801px) {
+  .modal-details {
+    flex-direction: row;
+  }
 }
 
-.modal-details p {
-  padding-left: 30px;
+@media (min-width: 801px) {
+  .modal-details img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 801px) {
+  .modal-details p {
+    padding-left: 30px;
+  }
 }
 
 .modal button {
