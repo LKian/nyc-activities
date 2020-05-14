@@ -9,11 +9,40 @@ import {
   faCocktail,
   faBinoculars,
   faShoppingCart,
+  faCoffee,
 } from "@fortawesome/free-solid-svg-icons";
+
+const BUTTONS = {
+  explore: { icon: faFireAlt },
+  eat: { icon: faUtensils },
+  drink: { icon: faCocktail },
+  see: { icon: faBinoculars },
+  shop: { icon: faShoppingCart },
+  coffee: { icon: faCoffee },
+};
+
+const CategoryButton = ({ id, icon, clicker }) => (
+  <button
+    onClick={clicker}
+    className="button button--filter"
+    data-activity={id}
+  >
+    <FontAwesomeIcon icon={icon} size="2x" />
+  </button>
+);
 
 const Grid = () => {
   const [activities, setActivities] = useState(data);
   const [activeCategory, setActiveCategory] = useState("");
+
+  const uniqueCategories = [];
+  for (let eachCat in data) {
+    if (uniqueCategories.indexOf(data[eachCat].category) !== -1) {
+    } else {
+      uniqueCategories.push(data[eachCat].category);
+    }
+  }
+  // [explore, eat, drink, see, shop, coffee]
 
   const handleButtonClick = (e) => {
     const categoryName = e.currentTarget.dataset.activity;
@@ -28,74 +57,14 @@ const Grid = () => {
     <div className="app-container">
       <section>
         <div className="container-filters">
-          <button
-            style={{
-              backgroundColor: activeCategory === "explore" ? "blue" : "white",
-            }}
-            className="button button--filter"
-            data-activity="explore"
-            onClick={handleButtonClick}
-          >
-            <FontAwesomeIcon icon={faFireAlt} size="2x" />
-          </button>
-          <button
-            style={{
-              backgroundColor: activeCategory === "eat" ? "blue" : "white",
-            }}
-            className="button button--filter button--eat"
-            data-activity="eat"
-            onClick={handleButtonClick}
-          >
-            <FontAwesomeIcon
-              color={activeCategory === "eat" ? "#fff" : "#000"}
-              icon={faUtensils}
-              size="2x"
+          {Object.keys(BUTTONS).map((key) => (
+            <CategoryButton
+              key={key}
+              id={key}
+              clicker={handleButtonClick}
+              {...BUTTONS[key]}
             />
-          </button>
-
-          <button
-            style={{
-              backgroundColor: activeCategory === "drink" ? "blue" : "white",
-            }}
-            className="button button--filter button--drink"
-            data-activity="drink"
-            onClick={handleButtonClick}
-          >
-            <FontAwesomeIcon
-              color={activeCategory === "drink" ? "#fff" : "#000"}
-              icon={faCocktail}
-              size="2x"
-            />
-          </button>
-          <button
-            style={{
-              backgroundColor: activeCategory === "see" ? "blue" : "white",
-              color: "red",
-            }}
-            className="button button--filter button--see"
-            data-activity="see"
-            onClick={handleButtonClick}
-          >
-            <FontAwesomeIcon
-              color={activeCategory === "see" ? "#fff" : "#000"}
-              icon={faBinoculars}
-              size="2x"
-            />
-          </button>
-          <button
-            style={{
-              backgroundColor: activeCategory === "shop" ? "blue" : "white",
-            }}
-            className="button button--filter button--shop"
-            data-activity="shop"
-            onClick={handleButtonClick}
-          >
-            <FontAwesomeIcon
-              color={activeCategory === "shop" ? "#fff" : "#000"}
-              icon={faShoppingCart}
-              size="2x"
-            />
-          </button>
+          ))}
         </div>
       </section>
       <section>

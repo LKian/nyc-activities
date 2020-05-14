@@ -206,8 +206,8 @@ const data = [
     directions: "https://g.page/attaboy134?share",
   },
   {
-    name: "F.A.O.Schwartz",
-    category: "see",
+    name: "F.A.O. Schwartz",
+    category: "shop",
     neighborhood: "midtown",
     description:
       "FAO Schwarz is an American toy brand and store.  The company is known for its high-end toys, life-sized stuffed animals, interactive experiences, brand integrations, and games.",
@@ -407,7 +407,7 @@ const data = [
   },
   {
     name: "Staten Island Ferry",
-    category: "explore ",
+    category: "explore",
     neighborhood: "battery park",
     description:
       "The Staten Island Ferry is one of the most iconic attractions in New York City for tourists. The Ferry, which connects Lower Manhattan with Staten Island, runs frequently, 365 days a year. A ride with the ferry is free and the view you get is absolutely amazing. Considering that there are many cruises available that you pay a lot of money for in Manhattan, this is a great budget-friendly option to take the skyline in from the water.",
