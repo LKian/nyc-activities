@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nyc-activities/static/css/main.a68ee285.chunk.css",
-    "main.js": "/nyc-activities/static/js/main.fbb603d6.chunk.js",
-    "main.js.map": "/nyc-activities/static/js/main.fbb603d6.chunk.js.map",
+    "main.css": "/nyc-activities/static/css/main.4ab7d06d.chunk.css",
+    "main.js": "/nyc-activities/static/js/main.7498eae0.chunk.js",
+    "main.js.map": "/nyc-activities/static/js/main.7498eae0.chunk.js.map",
     "runtime-main.js": "/nyc-activities/static/js/runtime-main.abed6fc2.js",
     "runtime-main.js.map": "/nyc-activities/static/js/runtime-main.abed6fc2.js.map",
     "static/js/2.a514dec9.chunk.js": "/nyc-activities/static/js/2.a514dec9.chunk.js",
     "static/js/2.a514dec9.chunk.js.map": "/nyc-activities/static/js/2.a514dec9.chunk.js.map",
     "index.html": "/nyc-activities/index.html",
-    "precache-manifest.d31cd60599891dc0131eaa0cd09fb248.js": "/nyc-activities/precache-manifest.d31cd60599891dc0131eaa0cd09fb248.js",
+    "precache-manifest.49c0ae129b49c60992916939e4405bf5.js": "/nyc-activities/precache-manifest.49c0ae129b49c60992916939e4405bf5.js",
     "service-worker.js": "/nyc-activities/service-worker.js",
-    "static/css/main.a68ee285.chunk.css.map": "/nyc-activities/static/css/main.a68ee285.chunk.css.map",
+    "static/css/main.4ab7d06d.chunk.css.map": "/nyc-activities/static/css/main.4ab7d06d.chunk.css.map",
     "static/js/2.a514dec9.chunk.js.LICENSE.txt": "/nyc-activities/static/js/2.a514dec9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.abed6fc2.js",
     "static/js/2.a514dec9.chunk.js",
-    "static/css/main.a68ee285.chunk.css",
-    "static/js/main.fbb603d6.chunk.js"
+    "static/css/main.4ab7d06d.chunk.css",
+    "static/js/main.7498eae0.chunk.js"
   ]
 }
